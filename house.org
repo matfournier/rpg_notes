@@ -1,0 +1,217 @@
+* Encumbrance
+** Carrying capacity
+- calculation
+  - str: 3 +/- str bonus
+  - con: 3 +/- con bonus
+  - dex: 2 +/- dex bonus (max of -2 or +2)
+  - int: 1 +/- int bonus (max of -1 or +2)
+  - wis: 0 + wis bonus (max of +2)
+
+reasoning: want someone with plate (6 slots) + sword + shield to carry only a
+bit of inventory.
+
+- leather is weightless when worn
+- chain weighs 3
+- plate weighs 6
+
+*** Encumbrance
+| excess | description  | land | explore | combat | def/sth/atk | climb |
+|      0 | unencumbered |   24 | 120'    | 40'    |           0 | 8'    |
+|      1 | Light        |   18 | 90'     | 30'    |          -1 | 6'    |
+|      2 | Heavily      |   12 | 60'     | 20'    |          -2 | 3'    |
+|      3 | Severely     |    6 | 30'     | 10'    |          -3 | 1'    |
+|      4 | Over         |    0 | 10'     | 0'     |          -4 | 0'    |
+|      5 | Haha         |    0 | 0'      | 0'     |  Always Hit | 0'    |
+** Weights
+- leather: free / 0
+- chain: 3 slots
+- plate: 6 slots
+- players assumed to have bags, etc. with them at all times
+
+* Camp / Forage / Rest sequence
+
+** Rules for short rest
+** Rules for Foraging
+** Rules for camping
+Setting up camp is broken into three phases:
+1. Camp phase
+2. Cooking phase
+3. Sleeping phase
+*** Camp Phase
+**** Making Camp
+- You can make camp at any time so long as:
+  - You are not in conflict or immediate peril
+  - You have a place to rest
+  - GM allows
+
+- When you make camp it will have a *location* and a *modifier*
+- if the camp is obviously sketchy or dangerous just go with that
+  - you are camping near an active volcano, in a forest fire, being actively
+    hunted, in an enemy town, etc. then you are obviously dangerous
+    - if you are in hostile-ish territory, near patrol lines, in a cave you
+      can't see the back of that you haven't scouted and there are fresh tracks,
+      etc. then you are probably sketchy
+      - if you are actively missing most equipment, or your party is huge and
+        you are in dangerous territory GM may upgrade sketchy to dangerous
+    - if any hirelings failed their morale rolls since ..
+      - ?
+    - if any hirelings are panicked, attempt to calm them, if you fail:
+      - ?
+      - camp is sketchy
+- if it's not obvious, make it a roll, 2d6 + modifier:
+  - Outdoor
+    - storm: -4
+    - rain/snow/wind/, other inclement weather (freezing, hot, etc.) -2
+    - epic day: +1
+  - Cave
+    - freezing temps/super hot: -2
+    - cave is....
+      - actually a dungeon - consider upgrading to sketchy to be in the mouth
+      - roll 1d20:
+          | result | description   | notes                                                                 |
+          |      1 | lair/camp     | inhabited and they are here (convert to next if scouted)              |
+          |      2 | lair          | inhabited recently: -2 roll                                           |
+          |    3-5 | uncomfortable | drippy, wet, rocks in the wrong places, wind coming right in, -1 roll |
+          |   3-17 | typical       | it's fine                                                             |
+          |  18-19 | comfy         | particularly comfy, just the right size for everyone, +1 roll         |
+          |     20 | Perfect       | +2 roll                                                               |
+  - Dungeon
+    - every open, unblocked entrance above one: -2
+    - every two blocked entrances: -1
+    - within two rooms of combat: -1
+    - If you start trying to factor in wandering monsters, heavily trafficked
+      areas, factions, hunting parties you are probably onto just being sketchy
+  - Hirelings affect this roll
+    - no hireling panicked: +1
+    - for each panicked hiring: -1  ((NEED TO DEFINE THIS))
+     
+      | roll  | description | notes |
+      | <= 1  | Dangerous   |       |
+      | 2 - 4 | Sketchy     |       |
+      | 4+    | Typical     |       |
+**** Camp Events
+| typical camp | description         |
+|            2 | Minor inconvenience |
+|         3-11 | Safe camp           |
+|           12 | Minor break         |
+
+| sketchy camp | description         |
+|            2 | disaster            |
+|        3 - 7 | minor inconvenience |
+|         8-10 | safe camp           |
+|           11 | Minor break         |
+|           12 | Good fortune        |
+
+| dangerous camp | description         |
+|            2-3 | disaster            |
+|            4-8 | minor inconvenience |
+|           9-11 | safe camp           |
+|             12 | Minor break         |
+**** Camp tables
+***** Disaster
+- come up some terrible situation
+- rest is nigh impossible, no fatigue or hp healed but rations still consumed
+***** Inconveniences
+****** Wilderness
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+****** Cave
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+****** Dungeon
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+***** Minor break
+****** Wilderness
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+****** Cave
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+****** Dungeon
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+
+***** Good fortune
+****** Wilderness
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+****** Cave
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+****** Dungeon
+
+| 1 | description |
+| 2 |             |
+| 3 |             |
+| 4 |             |
+| 5 |             |
+| 6 |             |
+
+
+*** Cook Phase (affects HP, fatigue if really unlucky)
+- fire? how does this work in a dungeon?
+*** Sleep Phase (affects fatigue, HP if really unlucky)
+- fire? how does this work in a dungeon?
+*** Hireling phase?
+- not sure if this is a good idea
+
+* Combat
+** Sequence
+- source https://thealexandrian.net/wordpress/7842/roleplaying-games/justins-house-rules-for-odd
+    Declare Magic / Preparations
+    Missiles
+    Movement (1/2)
+    Magic (takes effect if not interrupted by someone moving into combat)
+    Movement (1/2)
+    Melee (magic user can abort to fight melee, or if hit can save to still cast spell)
+    Miscellaneous (magic happens if survived combat, any one who held their
+  action, etc)
+* Magic (whitehack)
+- costs...
