@@ -25,23 +25,22 @@ bit of inventory.
 ** Weights
 *** Weapons
 **** Melee Weapons
- | Weapon               | Notes                                                              | Damage | Space requirements | Weight | Slots |
- |----------------------+--------------------------------------------------------------------+--------+--------------------+--------+-------|
- | Battle Axe           | 2H                                                                 |  1D8+1 | space              |     15 |     2 |
- | Handaxe/Arming sword |                                                                    |    1D6 |                    |      6 |     1 |
- | Short Sword          |                                                                    |  1D6-1 | Formation          |      4 |     1 |
- | Long Sword           | Requires space to swing                                            |  1D6+1 | space              |     10 |     1 |
- | Zweihander           | 2H                                                                 |  1D8+2 | lots of space      |     15 |     2 |
- | Club                 | can be improvised                                                  |  1D6-2 |                    |      3 |     1 |
- | Dagger               | can be thrown, can be hidden                                       |  1D6-2 | Formation          |      1 |   1/2 |
- | Warhammer/Mace       | +1 Atk vs metal armour, -1 everything else                         |    1D6 |                    |     10 |     1 |
- | Morning Star         | +1 Atk vs metal armour, -1 everything else, ignores shield, 3xCrit |    1D6 | space              |     20 |     1 |
- | Spear                | 2H, Reach                                                          |    1D6 | Formation          |      8 |     2 |
- | Halberd/Polearm      | 2H, reach                                                          |  1D6+1 | Formation          |     20 |     2 |
- | Quarterstaff         | Reach                                                              |    1D6 | space              |      4 |     2 |
- +-----+-----+-----+
+ | Weapon                 | Notes                                                              | Damage | Space requirements | Weight | Slots |
+ |------------------------+--------------------------------------------------------------------+--------+--------------------+--------+-------|
+ | Battle Axe             | 2H, can be used as a tool                                          |  1D8+1 | space              |     15 |     2 |
+ | Hand axe/ Arming sword |                                                                    |    1D6 |                    |      6 |     1 |
+ | Short Sword            |                                                                    |  1D6-1 | Formation          |      4 |     1 |
+ | Long Sword             | Requires space to swing                                            |  1D6+1 | space              |     10 |     1 |
+ | Zweihander             | 2H                                                                 |  1D8+2 | lots of space      |     15 |     2 |
+ | Club                   | can be improvised                                                  |  1D6-2 |                    |      3 |     1 |
+ | Dagger                 | can be thrown, can be hidden                                       |  1D6-2 | Formation          |      1 |   1/2 |
+ | Warhammer/Mace         | +1 Atk vs metal armour, -1 everything else                         |    1D6 |                    |     10 |     1 |
+ | Morning Star           | +1 Atk vs metal armour, -1 everything else, ignores shield, 3xCrit |    1D6 | space              |     20 |     1 |
+ | Spear                  | 2H, Reach                                                          |    1D6 | Formation          |      8 |     2 |
+ | Halberd/Polearm        | 2H, reach                                                          |  1D6+1 | Formation          |     20 |     2 |
+ | Quarterstaff           | Reach                                                              |    1D6 | space              |      4 |     2 |
 
- - 2H weapons cannot be carried in a backpack
+ - 2H weapons cannot be carried in a backpack with the exception of longbows
 
 **** Range Weapons
 | Weapon          | Notes                    | Damage | Space requirements | ROF | Weight | Range | Descriptive Range (penalty)             | Slots |
@@ -56,13 +55,13 @@ bit of inventory.
 
 **** Space requirements
 Space required depends on weapon used:
-| Space Requirement | Space Required | People per 10 ft | Dungeon Penalty                           |
-|-------------------+----------------+------------------+-------------------------------------------|
-| Formation         | 2 1/2 ft       |                4 | -                                         |
-| Normal            | 3 ft           |                3 | -                                         |
-| Space             | 5              |                2 | -2 Atk, -2 damage in tight spaces (melee) |
-| lots of space     | 10             |                1 | -4 atk, -4 damage in tight spaces (melee) |
-|                   |                |                  |                                           |
+| Space Requirement | Space Required | People per 10 ft | Dungeon Penalty                                                 |
+|-------------------+----------------+------------------+-----------------------------------------------------------------|
+| Formation         | 2 1/2 ft       |                4 | -                                                               |
+| Normal            | 3 ft           |                3 | -                                                               |
+| Space             | 5              |                2 | -2 Atk, -2 damage in tight spaces (melee)                       |
+| lots of space     | 10             |                1 | -4 atk, -4 damage in tight spaces (melee), fumble hits teammate |
+|                   |                |                  |                                                                 |
 
 *** Armour
 | armor           | Def | Weight | Slots | Notes                              |
@@ -74,6 +73,75 @@ Space required depends on weapon used:
 | Full Plate      |   6 |     60 |     6 | Can't sneak, swim                  |
 | Shield          |  +1 |     10 |     1 | Can be destroyed, save 1d12 damage |
 
+** Combat
+*** Combat Actions
+- Can take one minor action (manipulating a lever, shouting a command, etc.) and 1 major action
+- A major action is moving and attacking, shooting, or casting a spell.  Note you cannot Shoot and move other than fictionaly close by (I shoot and duck behind the table beside me) but you cannot shoot and move a zone
+
+*** Combat
+- The system is based on [phased real-time combat](https://spellsandsteel.blogspot.com/2018/10/phased-real-time-combat-solution-you.html):
+**** Orders Phase
+Each player outlines what they choose to do on their turn.  DM should play the monsters as monsters.  Dumb monsters, henchmen, etc. should do the obvious thing.  Smart monsters should be smart.  The DM should have a plan prior to what the players come up with (they are free to discuss) and not change the plan based on what they come up with
+- The DM hints at monster NPC/actions (unless the players are surprised, in which case the monsters may have a round w/o player actions)
+  - if someone is aiming a bow be specific, e.g. a smart henchman aiming a bow at the mage in the second rank
+  - dumb monsters glare at who they are going to attack, etc
+- Players Declare Actions
+  - if the order is not obvious from the fiction of the situation, Melee/Magic declare first, then melee space of weapon, but it really doesn't matter let the players talk amongst themselves
+**** Execution Phase
+- Interdependent groups are identified
+  - There will probably be several discrete combats happening simultaneously
+  - Interceptions of movement should be clear, it's not really possible to get around an active combatant unless the fiction obviously allows for it
+    - This is how battle lines should come up, e.g. someone should state they are shielding the archer/mage
+      + If tthey don't state it and have moved away from them leaving them exposed then such is lif
+- Actions are resolved Group by Group
+  - Resolve each group entirely before moving on to the next
+***** Resolve Ranged First
+- If someone has a readied weapon and the fiction allows, resolve the ranged attack first
+- If it's not obvious the ranged attack should happen before someone comes in melee w/ the ranged attacker make it an initiative check to see if they get the shot off in time
+    - If they do, great, treat them as if they are in simultaneous melee now
+    - If they don't, still treat them as if they are in simultaneous melee now
+***** Melee is simultanous
+- Death happens at the end of the round (unless via a ranged attack or an instantenously cast spell (note: most spells take affect at the end of the round)).  If you are in melee with something and you kill it, it still has had it's attack as well
+***** Magic takes affect at the end of the round
+- Unless the magic user has spent extra to have an instaneous spell, magic effects happen at the end of the round
+***** Conflicts ? Null Events ? Etc
+- If something fictionally needs to happen before something else, consider:
+  - making it initiative roll to see what happens first, or
+  - adding a negative modifier to allow a player or monster to change their plans
+**** Chaotic Melee
+- If it's truly mass/swarmy conflict have the players and monsters give their battleline JRPG style (front row, backrow)
+  - players can't pick their targets (that specific orc) but can select their group (I attack the orcs, not the trolls)
+- Apply formation rules as appropriate (provided the size of the combatants is the same)
+  - 4 people w/ Formation weapons can form a line against 2 enemies with Lots of Space Required
+  - this is the max participants in combat unless some size rules come into play at the GMs discretion
+    - E.g. you could end up fighting 6 tiny gnomes even though they are greater than the formation rules allow
+    - 2 people with space weapons + 2 people with normal weapons could form a battleline against a particularly huge monster
+**** Mass Combat
+- group combatants into units as appropriate
+- compute total hit points for all units
+- damage dealt is multiplied by combat scale
+  - not everyone gets an attack in a larger skirmish since not everyone is in contact, terrain plays a role, etc
+
+    | Number | Weapon Damage Mulitiplier | HD 1 | HD2 |  HD4 |  HD4 |  HD5 |
+    |--------+---------------------------+------+-----+------+------+------|
+    |    2-5 | x3                        |   22 |  45 |   89 |  180 |  360 |
+    |   6-10 | x4                        |   45 |  89 |  180 |  360 |  720 |
+    |  11-20 | x5                        |   90 | 180 |  360 |  720 | 1440 |
+    |  21-40 | x6                        |  180 | 360 |  720 | 1440 | 2880 |
+    |  41-80 | x7                        |  360 | 720 | 1440 | 2880 | 5760 |
+
+- When hit, adjust your combat scale
+  - Divide the remaining hitpoints by the average points per individual (round up) to see how many are alive
+- Player characters are the last to die in a unit
+- Spells work as they normally do but at increased cost (consider 1-2 points per multiplier)
+- Every unit must make a morale check when:
+  - it loses the first member
+  - it loses more than 1/2 the mmembers
+  - If this is the PCs unit, they can attempt to rally in the next round
+- If it fails the morale check it is *broken*
+  -  if a broken unit suffers any damge it will rout
+    - it will flee the battlefield, any unit(s) in melee range get a free attack with a +2 bonus
+
 *** Combat Ranges
 - if playing theater of the mind, use the following modified by description as required:
   - Melee :: in melee range (5 ft)
@@ -84,6 +152,14 @@ Space required depends on weapon used:
   - Use actual range past here you are clearly outside doing something at distance
 - Let the fiction guide, players may have a rough battleline so two people can be in melee but one has a reach weapon and is behind the other
   even though there isn't a 10ft Combat Range for the weapon.
+- A player can move up to the moverange rating allowed by their encumbrance level
+- Movement is simultaneous, so full range of movement may be interrupted
+- If moving between zones, cannot move and attack in the same round unless both particpants move towards each other
+- Charging
+  - Moving 2x zones (modified by encumbrance) takes up an entire round of movement. No combat unless they are also moving towards you
+    - This is pure movement closer to running/sprinting
+  - Charging 1x zone grants attack with advantage, but -2 Def for the duration of the round (incl. against incoming range attacks)
+
 * Fatigue
 
  - TODO
@@ -296,5 +372,21 @@ Setting up camp is broken into two phases:
 * Combat
 ** Sequence
 - use these rules https://spellsandsteel.blogspot.com/2018/10/phased-real-time-combat-solution-you.html
-* Magic (whitehack)
-- costs...
+* Magic
+- Magic Costs 1 - 14 HP
+  - progression: 1, 2, d6, d6+1, d6+2, 2d6, 2d6+1, 2d6+2
+  - Very powerful magic requires a save (if it fails, it fizzles but you keep your hp)
+    - this is d6+2 or above
+- If you take damage at any time during the turn, need to save or lose concentration
+- A basic spell (cost 1) takes a full turn to cast, targets one create at short range, heals or deals 1 damage.  Increase costs by 1 to 5 points for each:
+  - generic wording: e.g. Necromancy vs. Raise Skeleton. The former should cost atleast 1-2 points more
+  - instant cast time (takes affect now, not at the end of the round)
+  - long range, extra targets, large AOE
+  - more damage costs more
+  - target w/ more HD than the caster has levels (spells that have no save, for instance)
+  - spell duration: longer should cost more
+  - using your magic in melee will cost at least 2 more ranks (e.g. a 1 hp spell would become d6)
+- Reduce cost for
+  - increase spell casting time
+  - ingenious use of components
+  - completed uner some special circumstances (rituation, location, etc.
