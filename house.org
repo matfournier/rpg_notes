@@ -10,10 +10,6 @@
 reasoning: want someone with plate (6 slots) + sword + shield to carry only a
 bit of inventory.
 
-- leather is weightless when worn
-- chain weighs 3
-- plate weighs 6
-
 *** Encumbrance
 | excess | description  | land | explore | combat | def/sth/atk | climb |
 |      0 | unencumbered |   24 | 120'    | 40'    |           0 | 8'    |
@@ -23,10 +19,56 @@ bit of inventory.
 |      4 | Over         |    0 | 10'     | 0'     |          -4 | 0'    |
 |      5 | Haha         |    0 | 0'      | 0'     |  Always Hit | 0'    |
 ** Weights
+*** Weapons
+**** Melee Weapons
+ | Weapon               | Notes                                          | Damage | Space requirements | Weight | Slots |
+ | -------              | ---                                            | ------ | -----------------  | ------ |  ---- |
+ | Battle Axe           | 2H                                             |  1D8+1 | space              |     15 |     2 |
+ | Handaxe/Arming sword |                                                |    1D6 |                    |      6 |     1 |
+ | Short Sword          |                                                |  1D6-1 | Formation          |      4 |     1 |
+ | Long Sword           | Requires space to swing                        |  1D6+1 | space              |     10 |     1 |
+ | Zweihander           | 2H                                             |  1D8+2 | lots of space      |     15 |     2 |
+ | Club                 | can be improvised                              |  1D6-2 |                    |      3 |     1 |
+ | Dagger               | can be thrown, can be hidden                   |  1D6-2 | Formation          |      1 |   1/2 |
+ | Warhammer/Mace       | +1 Atk vs metal armour                         |    1D6 |                    |     10 |     1 |
+ | Morning Star         | +1 Atk vs metal armour, ignores shield, 3xCrit |    1D6 | space              |     20 |     1 |
+ | Spear                | 2H, Reach                                      |    1D6 | Formation          |      8 |     2 |
+ | Halberd/Polearm      | 2H, reach                                      |  1D6+1 | Formation          |     20 |     2 |
+ | Quarterstaff         | Reach                                          |    1D6 | space              |      4 |     2 |
+ +-----+-----+-----+
+**** Range Weapons
+| Weapon          | Notes                    | Damage | Space requirements | ROF | Weight | Range | Slots |
+|-----------------+--------------------------+--------+--------------------+-----+--------+-------+-------|
+| Short Bow       | Can be used while riding |  1D6-1 | formation          |   1 |      4 |    50 | 1     |
+| Long Bow        |                          |  1D6+1 |                    |   1 |      5 |    75 | 2     |
+| Dagger (Thrown) |                          |  1D6-2 | formation          |   1 |      1 |    15 | 1/2   |
+| Sling           |                          |  1D6-2 | space              |   1 |      1 |    30 | 1/2   |
+| Dart            | Up to leather            |    1HP | formation          |   2 |      - |    20 | 1/3   |
+| Pistol          | 1H                       |  1D6+1 | formation          | 1/2 |      3 |    20 | 1/2   |
+| Musket          |                          |  1d6+2 | formation          | 1/3 |     10 |    30 | 1     |
+**** Space requirements
+Space required depends on weapon used:
+| Space Requirement | Space Required | People per 10 ft | Dungeon Penalty                           |
+|-------------------+----------------+------------------+-------------------------------------------|
+| Formation         | 2 1/2 ft       |                4 | -                                         |
+| Normal            | 3 ft           |                3 | -                                         |
+| Space             | 5              |                2 | -2 Atk, -2 damage in tight spaces (melee) |
+| lots of space     | 10             |                1 | -4 atk, -4 damage in tight spaces (melee) |
+|                   |                |                  |                                           |
+
 - leather: free / 0
 - chain: 3 slots
 - plate: 6 slots
 - players assumed to have bags, etc. with them at all times
+*** Armour
+| armor           |  Def | Weight | Slots | Notes                              |
+| ------          | ---- | ------ |  ---- | ----                               |
+| Leather         |    2 |     15 |   0.5 |                                    |
+| Studded Leather |    3 |     20 |     2 |                                    |
+| Chainmail       |    4 |     30 |     3 | Can't sneak, swim                  |
+| Splint mail     |    5 |     50 |     5 | Can't sneak, swim                  |
+| Full Plate      |    6 |     60 |     6 | Can't sneak, swim                  |
+| Shield          |   +1 |     10 |     1 | Can be destroyed, save 1d12 damage |
 
 * Camp / Forage / Rest sequence
 
@@ -69,12 +111,14 @@ Setting up camp is broken into three phases:
       - actually a dungeon - consider upgrading to sketchy to be in the mouth
       - roll 1d20:
           | result | description   | notes                                                                 |
+          |--------+---------------+-----------------------------------------------------------------------|
           |      1 | lair/camp     | inhabited and they are here (convert to next if scouted)              |
-          |      2 | lair          | inhabited recently: -2 roll                                           |
+          |      2 | lair          | inhabited recently: -2 roll, everyone is on edge                      |
           |    3-5 | uncomfortable | drippy, wet, rocks in the wrong places, wind coming right in, -1 roll |
           |   3-17 | typical       | it's fine                                                             |
           |  18-19 | comfy         | particularly comfy, just the right size for everyone, +1 roll         |
           |     20 | Perfect       | +2 roll                                                               |
+          |--------+---------------+-----------------------------------------------------------------------|
   - Dungeon
     - every open, unblocked entrance above one: -2
     - every two blocked entrances: -1
@@ -86,23 +130,30 @@ Setting up camp is broken into three phases:
     - for each panicked hiring: -1  ((NEED TO DEFINE THIS))
      
       | roll  | description | notes |
+      |-------+-------------+-------|
       | <= 1  | Dangerous   |       |
       | 2 - 4 | Sketchy     |       |
       | 4+    | Typical     |       |
+      |-------+-------------+-------|
 **** Camp Events
 | typical camp | description         |
+|--------------+---------------------|
 |            2 | Minor inconvenience |
 |         3-11 | Safe camp           |
 |           12 | Minor break         |
 
+
 | sketchy camp | description         |
+|--------------+---------------------|
 |            2 | disaster            |
 |        3 - 7 | minor inconvenience |
 |         8-10 | safe camp           |
 |           11 | Minor break         |
 |           12 | Good fortune        |
 
+
 | dangerous camp | description         |
+|----------------+---------------------|
 |            2-3 | disaster            |
 |            4-8 | minor inconvenience |
 |           9-11 | safe camp           |
@@ -204,14 +255,6 @@ Setting up camp is broken into three phases:
 
 * Combat
 ** Sequence
-- source https://thealexandrian.net/wordpress/7842/roleplaying-games/justins-house-rules-for-odd
-    Declare Magic / Preparations
-    Missiles
-    Movement (1/2)
-    Magic (takes effect if not interrupted by someone moving into combat)
-    Movement (1/2)
-    Melee (magic user can abort to fight melee, or if hit can save to still cast spell)
-    Miscellaneous (magic happens if survived combat, any one who held their
-  action, etc)
+- use these rules https://spellsandsteel.blogspot.com/2018/10/phased-real-time-combat-solution-you.html
 * Magic (whitehack)
 - costs...
