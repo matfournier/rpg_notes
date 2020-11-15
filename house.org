@@ -73,7 +73,7 @@ Space required depends on weapon used:
 | Full Plate      |   6 |     60 |     6 | Can't sneak, swim                  |
 | Shield          |  +1 |     10 |     1 | Can be destroyed, save 1d12 damage |
 
-** Combat
+* Combat
 *** Combat Actions
 - Can take one minor action (manipulating a lever, shouting a command, etc.) and 1 major action
 - A major action is moving and attacking, shooting, or casting a spell.  Note you cannot Shoot and move other than fictionaly close by (I shoot and duck behind the table beside me) but you cannot shoot and move a zone
@@ -165,7 +165,6 @@ Each player outlines what they choose to do on their turn.  DM should play the m
  - TODO
 
 * Camp / Forage / Rest sequence
-
 ** Rules for short rest
 ** Rules for Foraging
 ** Rules for camping
@@ -368,10 +367,6 @@ Setting up camp is broken into two phases:
 |    2 | Sputtering, dim, cold, food ends up burnt or undercooked-2 HP recovered, horse dung doesn't burn very well and caves food a strange taste etc, start day with 1 fatigue  |
 |   3+ | Decent fire, normal                                                                                                                                                      |
 
-
-* Combat
-** Sequence
-- use these rules https://spellsandsteel.blogspot.com/2018/10/phased-real-time-combat-solution-you.html
 * Magic
 - Magic Costs 1 - 14 HP
   - progression: 1, 2, d6, d6+1, d6+2, 2d6, 2d6+1, 2d6+2
