@@ -378,6 +378,7 @@ Setting up camp is broken into two phases:
   - Very powerful magic requires a save (if it fails, it fizzles but you keep your hp)
     - this is d6+2 or above
 - If you take damage at any time during the turn, need to save or lose concentration
+    - if you end the round in combat, you do not have a melee phase regarldess of whether or not the above save occurred
 - A basic spell (cost 1) takes a full turn to cast, targets one create at short range, heals or deals 1 damage.  Increase costs by 1 to 5 points for each:
   - generic wording: e.g. Necromancy vs. Raise Skeleton. The former should cost atleast 1-2 points more
   - instant cast time (takes affect now, not at the end of the round)
