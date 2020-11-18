@@ -147,8 +147,9 @@ by their Dexterity Bonus. It also affects how coordinated you are while loaded d
 with your inventory.
 
 \key{Constitution}: Roll under Constituition to resist fatigue, drowning,
-and poison (add positive bonus to your Save for these kinds of throws). It affects your stamina when loaded down with your inventory.  A character's
-hitpoints are based on their Constitution.
+and poison (add positive bonus to your Save for these kinds of throws).
+It affects your stamina when loaded down with your inventory.  A character's
+starting hitpoints are based on their Constitution.
 
 \key{Intelligence}: Roll under intelligence to solve difficult puzzles, read obscure texts,
 or identify items and treasure. If you have a positive bonus it indicates how many
@@ -156,7 +157,8 @@ extra language you speak. Bonuses aslo apply to how spatially organized you are 
 inventory.
 
 \key{Wisdom}: Roll under wisom to see through lies, spot hidden dangers, and avoid mind
-altering spells(add positive bonus to your Save for these kinds of throws). Wisom affects how many extra slots of flavours a character may have.
+altering spells(add positive bonus to your Save for these kinds of throws). A wisdom modifier
+of +3 grants an extra descriptor during player creation.
 
 \key{Charisma}: Roll under Charisma to flatter, beguile, or barter. Charisma determines how well other mortals \hyperref[key:Reaction
   Roll]{react} to you, how many \hyperref[sec:retainers]{retainers and
@@ -178,16 +180,18 @@ as the fallback.  This represent's the characters luck and determination to resi
 
 \marginnote{You have two \textbf{Quick slots} representing your hands.
   The remaining slots are \textbf{Regular slots}. Anything in a regular
-slot takes 1 round to fish out.}
+  slot takes 1 round to fish out.}
 
 \begin{tabular}{lcr}
   Ability & Value & Notes \\
-  Strength & 3 & Strength bonus (-3 to +3) \\
-  Constitution & 3 & Constituition bonus (-3 to +3) \\
-  Dexterity & 3 & Dexterity bonus (-2 to +2) \\
-  Intelligence & 1 & Intelligence bonus (-1 or +1) \\
+  Strength & 3 & Strength bonus (\textpm 3) \\
+  Constitution & 3 & Constituition bonus (\textpm 3) \\
+  Dexterity & 3 & Dexterity bonus (\textpm 2) \\
+  Intelligence & 1 & Intelligence bonus (\textpm 1) \\
   Wisdom & 0 & Wisdom bonus (0 to +2)\\
 \end{tabular}
+
+\medskip\noindent If this is too finicky, use 9\textpm strength modifier to determine the total number of slots.
 
 \newthought{Choose your \index{Class}class}.
 
@@ -209,7 +213,7 @@ this archetype are more like broad strokes that need to be filled in and customi
 \key{Weird} You break the rules of the universe. They call you Alchemist; Scientist; Witch; Sorceror; Demon; Cursed. You have the least amount of hitpoints but you are capable of
 extraordinary wonders, provided you are willing to pay the cost.
 
-\bigstep
+\bigskip
 Archetypes broadly define the type of character you have. \marginnote{\textbf{Archetype mixing}
 is encouraged when hacking classes! You could have a weird fighter in order to model some
 sort of battle warrior
@@ -219,9 +223,9 @@ Besides setting the Hit Dice and Attack value for each class, each archetype has
 \key{Abilities}: The number of abilities the player has. These could be combat abilities,
 attunements (skilled), or number of magic words/phrases known.
 
-\key{Flavours}: Descriptive relationships (race, careers, offiliations, history, literal relationships) associated with one or more character stats
+\key{Descriptions}: Descriptive relationships (race, careers, offiliations, history, literal relationships) associated with one or more character stats
 
-Gaining a new \textbf{flavour is automatic}; however, gaining \textbf{a new ability requires time}, training, and
+Gaining a new \textbf{description is generally automatic}; however, gaining \textbf{a new ability requires time}, training, and
 money and needs to work with the fiction of the class, game, and or campaign. This should be worked out
 between the GM and player. It should not be hard for a character to achieve this if it is aligned
 with the fiction; if it is outside of the fiction, a quest or similar may be appropriate in order
@@ -232,8 +236,7 @@ to achieve it.
 \newthought{Roll for hit points}\index{Hit Points} and apply your
 constitution bonus. Fierce roll 1d8, deft roll 1d6, and weird roll 1d6.
 
-\marginnote[-3em]{When gaining a level, reroll one die per level. Add
-  your constitution bonus to every level. A die can not be reduced
+\marginnote[-3em]{When gaining a level, reroll one die per level. A die can not be reduced
   below 1. Keep your old hit points if the new result is lower.}
 
 \newthought{Roll 3d6 \texttimes 10~coins}. Buy some
@@ -258,77 +261,111 @@ constitution bonus. Fierce roll 1d8, deft roll 1d6, and weird roll 1d6.
 \subsection{\index{Fierce}Fierce Archetype}
 
 \begin{tabular}{lrlccccc}
-  Level & Experience & HP & Attack & Save & Active Abilities & Inactive Abilities & Flavours \\
-  1 & 0 & Con - 2  & 11 & 6 & 1 & & 2 \\
-  2 & 2,000  & +d6+2 & 12 & 7 & 2 & & 2 \\
-  3 & 4,000  & +d6+2 & 13 & 7 & 2 & & 3 \\
-  4 & 8,000  & +d6+1 & 14 & 7 & 3 & & 3 \\
-  5 & 16,000  & +d6+1 & 15 & 8 & 4 & & 3 \\
-  6 & 32,000  & +d6 & 15 & 8 & 4 & & 4 \\
-  7 & 64,000  & +d6-1 & 16 & 9 & 4 & & 4 \\
-  8 & 100,000  & +d4 & 16 & 9 & 4 & & 5 \\
+  Level & Experience & HP & Attack & Save & Active Abilities & Inactive Abilities & Descriptions \\
+  1 & 0 & 8  & 11 & 6 & 1 & & 1 \\
+  2 & 2,000  & +d6 & 12 & 7 & 2 & & 1 \\
+  3 & 4,000  & +d6 & 13 & 7 & 2 & & 2 \\
+  4 & 8,000  & +d6 & 14 & 7 & 3 & & 2 \\
+  5 & 16,000  & +d6 & 15 & 8 & 4 & & 2 \\
+  6 & 32,000  & +d6 & 15 & 8 & 4 & & 3 \\
+  7 & 64,000  & +d6 & 16 & 9 & 4 & & 3 \\
+  8 & 100,000  & +d4 & 16 & 9 & 4 & & 4 \\
 \end{tabular}
+
+\medskip A character using a fierce archetype adds their Constitution Bonus to their HP
+every second level.  Their abilities are typically combat oriented feats.
+\marginnote{Fierce abilities are tricky. These feats are typically things that other classes cannot do, even in
+  fiction. When designing feats, make sure they are not just a regular combat gambit a typical player would
+  want to attempt, as you don't want to destroy the players imagination when problem solving combat. For example,
+  every character can sunder a shield to reduce damage by 1d12; however, perhaps a certain fierce based class could
+  sunder a shield twice, or sunder a shield and automatically recieve the max damage reduction.}
 
 \subsection{\index{Skilled}Skilled Archetype}
 
-\begin{tabular}{lrlccccc}
-  Level & Experience & HP & Attack & Save & Active Abilities & Inactive Abilities & Flavours \\
-  1 & 0 & Con - 4  & 10 & 6 & 1 & 1 & 2 \\
-  2 & 2,000  & +d6 & 11 & 7 & 1 & 2 & 2 \\
-  3 & 4,000  & +d6 & 12 & 7 & 2 & 2 & 3 \\
-  4 & 8,000  & +d6 & 13 & 7 & 2 & 3 & 4 \\
-  5 & 16,000  & +d6 & 13 & 8 & 3 & 3 & 4 \\
-  6 & 32,000  & +d4 & 14 & 8 & 3 & 3 & 5 \\
-  7 & 64,000  & +d4 & 14 & 9 & 3 & 4 & 5 \\
-  8 & 100,000  & +d4 & 15 & 9 & 3 & 4 & 5 \\
-\end{tabular}
+Classes based on the skilled archetype are strongly defined by their description, and are broadly the only class that
+gains has abilities associated with objects (grandfather's sword, a necromancer's skull,
+stolen lockpicks of the Grand Visier, a person from their past, an upbringing, etc.). You could say that
+this is their obsession, allowing them to do feats that would appear to be magic, with any object that
+they are particularly skilled with.  As a skilled player levels, they use their ability slots to attune
+themselves with various objects.  Switching active and inactive abilities is possible and requires
+a days undisturbed training.
 
-A skilled player is strongly defined by their description, and are broadly the only class that
-gains additional descriptions which can be objects (grandfather's sword, a necromancer's skull,
-stolen lockpicks of the Grand Visier, a person from their past, an upbringing, etc.).
 When a skilled archetype has advantage, it may trade it's double advantage roll for a double
 damage roll if the combat situation is aligned with their description. When doing something
 aligned with their abilities, hard tasks should succeed automatically while nigh impossible
 tasks, well described by the player, should require a standard roll.  Switching active
 and inactive abilities requires a days undisturbed training.
 
-A skilled character cannot use a shield or wear armour heavier than studded leather.
+\medskip\noindent\begin{tabular}{lrlccccc}
+  Level & Experience & HP & Attack & Save & Active Abilities & Inactive Abilities & Descriptions \\
+  1 & 0 & 6  & 10 & 6 & 1 & 1 & 1 \\
+  2 & 2,000  & +d6 & 11 & 7 & 1 & 2 & 1 \\
+  3 & 4,000  & +d6 & 11 & 7 & 2 & 2 & 2 \\
+  4 & 8,000  & +d6 & 12 & 7 & 2 & 2 & 3 \\
+  5 & 16,000  & +d6 & 13 & 8 & 3 & 2 & 3 \\
+  6 & 32,000  & +d4 & 14 & 8 & 3 & 2 & 4 \\
+  7 & 64,000  & +d4 & 14 & 9 & 3 & 3 & 4 \\
+  8 & 100,000  & +d4 & 15 & 9 & 3 & 3 & 4 \\
+\end{tabular}
+
+\medskip\noindent A skilled character cannot use a shield or wear armour heavier than studded leather.
 If they do, they lose their abilities and special rolls. They have -2 Attack with any two-handed
 weapon (including the longbow) that is not their specialty.
 
+A character based on a skilled archetype does not mark their fundamental descriptor with a statistic
+like other archetypes.
+
 \subsection{\index{Weird}Weird Archetype}
 
-\begin{tabular}{lrlccccc}
-  Level & Experience & HP & Attack & Save & Active Abilities & Inactive Abilities & Flavours \\
-  1 & 0 & Con - 3  & 10 & 6 & 1 & 1 & 2 \\
-  2 & 2,000  & +d6+1 & 10 & 7 & 2 & 1 & 2 \\
-  3 & 4,000  & +d6+1 & 11 & 7 & 2 & 2 & 3 \\
-  4 & 8,000  & +d6+1 & 12 & 7 & 3 & 3 & 3 \\
-  5 & 16,000  & +d6 & 13 & 8 & 3 & 3 & 4 \\
-  6 & 32,000  & +d6 & 13 & 8 & 3 & 3 & 4 \\
-  7 & 64,000  & +d4 & 14 & 9 & 3 & 4 & 4 \\
-  8 & 100,000  & +d4 & 14 & 9 & 4 & 4 & 4 \\
-\end{tabular}
-
-\midstep\noindent Weird abilities are worked out on a per situation basis and should be
+Weird abilities are worked out on a per situation basis and should be
 kept in a log to keep a consistent world. A word or a phrase can be present in an ability.
 Switching active and inactive abilities requires a days undisturbed training.
 
-A weird character pays double HP for weird abilities if wearing chain mail and
-above or using a shield. A wise character cannot use 2H weapons or ranged weapons other
-than the quarterstaff and musket.
+\begin{tabular}{lrlccccc}
+  Level & Experience & HP & Attack & Save & Active Abilities & Inactive Abilities & Descriptions \\
+  1 & 0 & 6  & 10 & 6 & 1 & 1 & 1 \\
+  2 & 2,000  & +d6 & 10 & 7 & 2 & 1 & 1 \\
+  3 & 4,000  & +d6 & 11 & 7 & 2 & 2 & 2 \\
+  4 & 8,000  & +d6 & 12 & 7 & 3 & 3 & 2 \\
+  5 & 16,000  & +d6 & 13 & 8 & 3 & 3 & 3 \\
+  6 & 32,000  & +d6 & 14 & 8 & 3 & 3 & 3 \\
+  7 & 64,000  & +d4 & 14 & 9 & 3 & 4 & 3 \\
+  8 & 100,000  & +d4 & 15 & 9 & 4 & 4 & 3 \\
+\end{tabular}
 
-\subsection{\index{Descriptions}Flavours and Descriptions}
+\medskip\noindent A wise character with a wisdom score above 15 gets +1 Active ability total
+at player creation time.
 
-A new character has two flavours (things that define them) and one of these must be their
-fundamental description. The description could be a vocation, career, life purpose, etc.
-Flavours give characters broadly defined skills and backgrounds that may become useful or
-relevant during the adventure.  Having a flavour associated with a task being attempted
-gives beneficial rolls, and in some instances may be required to even attempt the task.
+A weird character pays double HP for weird abilities if wearing armour heavy than studded leather.
+or when using a shield. A wise character can only use pistols and muskets for ranged weapons. A wise
+character can only use 1H weapons with space requirements less than Space (quarterstaffs are exempt
+for thematic reasons).
 
-\key{Description}
+\subsection{\index{Descriptions}Descriptions}
 
-\key{Flavour}
+\textbf{Every character has a single defining descriptor} in addition to the listed values above. This
+\textbf{fundamental descriptor} is commonly in line with training, vocation, or career.
+For example: archer in the 17th regiment, brigand, horse thief, wizard of the granite path, etc. Many of the suggested starting
+classes come with this partially or fully defined. As always, feel build something yourself
+using the above archetype rules.
+
+\marginnote{A starting character has both a defining descriptor and one additional description as defined
+  in the above tables.}
+
+The descriptions a character gains as they level give characters broadly defined skills and
+backgrounds that may become useful or relevant during the adventure.  Having a relevant description
+associated with a task being attempted gives beneficial rolls, and in some instances may be required to
+even attempt the task. These other descriptions could be minor jobs, positions and titles, schooling, or other affiliations
+picked up over the course of an adventure.
+
+All descriptions are associated with a single ability (Strength, Dexterity, etc). Mechanically, when doing
+a task where both the ability and the description come into play (e.g. lifting a heavy stone trap door because
+it's a strength task and the player has marked Weightlifter beside Strength), the player will roll with advantage.  An attribute can have
+a maximum of two descriptions associated with it.
+
+\textbf{There is one exception for Skilled archetypes} --they do
+not mark their fundamental descriptor with a stat as they get they get to roll with advantage for any task associated
+with their fundamental descriptor regardless of the underlying ability being tested.
 
 \newpage
 
@@ -382,13 +419,45 @@ range they can be used from, and the penalty for each step in abstract range. Ra
 
 \bigskip\noindent\textbf{todo - remaining equipment tables}
 
-\subsection{Encumbrance}
+\subsection{\index{Encumbrance}Encumbrance}
+\label{sec:encumbrance}
 
 A character or hireling cannot carry the world. Inventory management is part of the game
 and if a character can't carry everything they need then they will have to do without
 or hire someone to carry it for them.
 
+\noindent When \textbf{exploring use the following table}, with each excess slot consumed applied:
 
+\begin{tabular}{llccc}
+  Excess Slots & Rating & Land & Explore & Climb \\
+  0 & Unencumbered & 24 & 120' & 8' \\
+  1 & Light & 18 & 90' & 6' \\
+  2 & Heavily & 12 & 60' & 3' \\
+  3 & Severely & 6 & 30' & 1' \\
+  4 & Over & 0 & 10' & 0' \\
+  5 & Haha & 0 & 0' & 0' \\
+\end{tabular}
+\marginnote{When a \textbf{roll is required} to move, \textbf{roll against strength}. Failure means you
+  hesitate, stumble, catch your breath, etc. and you forfeit your movement for the round. Enemies can
+  still close with you and you can melee as normal in that round. Let the fiction guide you --moving close
+  by should be fine, but trying to cross a room, etc. when severely encumbered should require a roll in
+  combat.}
+
+\noindent Encumbrance affects \textbf{how well you fight} and how much you can move in abstract combat. The
+\textbf{penalty applies to Attack, Defense, and Stealth}, and if you are too encumbered you will have
+a challenge moving around in combat.  Any agility related tasks outside of combat requiring a roll
+should also have the same penalty applied to it.
+
+
+\bigskip\noindent\begin{tabular}{llccc}
+ Excess Slots & Rating & Penalty & Move & Run \\
+ 0 & Unencumbered & 0 & 1 zone & 2 zones \\
+ 1 & Light & -1 & 1 zone & 2 zones \\
+ 2 & Heavily & -2 & \nicefrac{1}{2} & 1 zone \\
+ 3 & Severely & -3 & Roll & Nope \\
+ 4 & Over &  -4 & Roll with Penalty & Nope \\
+ 5 & Haha & Automatically Hit & Nope & Nope \\
+\end{tabular}
 
 \section{Classes}
 
@@ -409,7 +478,8 @@ erecting a statue, building a business, building an estate, retainers who work f
 on. Let's not fool ourselves that murderhobo adventuring is not part of the OSR tradition.
 Loot for XP doesn't count until it's brought back to town safely. If a character wasn't present
 for at least some significant portion of an adventure, they probably shouldn't get the XP
-for it. Consider rewarding XP for travel, exploration, and ingenuity as well. Handle new characters joining the table however seems fair for your table.
+for it. Consider rewarding XP for travel, exploration, and ingenuity as well. Handle new characters
+joining the table however seems fair for your table.
 
 \key{Level}: As time passes, characters hit better, get better saving
 throws and gain hit points. They \emph{gain a level}.
@@ -440,6 +510,70 @@ to apply, use the generic Save derived attribute.
 \subsection{Combat}
 
 
+\newthought{Combat Ranges}\index{Combat Ranges} are abstracted into zones for quicker theater of
+the mind combat driven by the player fiction.  Be generous with abstract movement, spells with templates, etc.
+It should be obvious from the fiction what should apply.  Players can use their movement
+(subject to \hyperref[sec:encumbrance]{encumbrance rules}) to move between a single zone in combat.
+They can forgo melee by running two zones.  They can charge within a zone.
+
+\medskip\noindent\begin{tabular}{llc}
+  Zone & Description & Approximate Distance (ft) \\
+  Melee & In fighting range of a typical weapon & 5 \\
+  Room & Nearby, but not yet in melee range & 25 \\
+  Near & Close enougho run to in a round & 50 \\
+  Range & Visible, but unreachable in a round & 75 \\
+  Far Range & Max range combat range & 100 \\
+\end{tabular}
+
+
+\marginnote{Some weapons have a reach of 10 ft. Let the fiction guide and have those weapons
+  come into play when a clear battle line with a front and back row is formed, otherwise
+  assume they are in mlee range.}
+
+\medskip\noindent For farther ranges you probably don't need to track it as combat zones and if
+anything is happening, it's probably just ranged plinking or magic. Most weapons cannot even
+accurately shoot that far such that they don't even have a modifier to apply.  Consider -4 or
+even -5 for anything but a longbow or a musket, which should be atleast -2 assuming an
+ambush type situation.
+
+\newthought{Mass Combat}\index{Mass Combat} is handled by scaling damage and hp:
+
+\begin{enumerate}
+\item group combatants into units as appropriate (probably led by a PC)
+\item compute total hitpoints for all units
+\item damage dealt is multiplied by the Weapon Damage Multiplier
+\item When hit, adjust the combat scale.  Divide the remaining hitpoints by the average points per individual
+  (round up) to see how many are alive
+\item Player characters are the last to die in a unit
+\item Spells work as normal
+  \marginnote{Consider increasing the cost of spells.
+    For example, a spell normally costing 2 HP should cost d6+2 when affecting a group of 21-40 people.
+    If the spell does damage, use the same modifier as in the table.
+    \begin{tabular}{lcc}
+      Number & Magic Step Increase \\
+      2-5 & None \\
+      6-10 & 1 \\
+      11-20 & 2 \\
+      21-40 &  3 \\
+      41-80 &  4 \\
+    \end{tabular}
+  }
+
+\item Every unit must make a morale check when they lose the first member or lose more than half their members
+\item If the unit fails the morale check it is \textbf{broken}.  A broken unit that suffers any damage will rout.
+  If they flee the battlefield, any unit(s) in melee range get a free attack with a +2 bonus. If it is the PC
+  unit, they can attempt to rally the next round (roll under appropriate stat).
+
+\end{enumerate}
+
+\medskip\noindent\begin{tabular}{lcccccc}
+Number & Dam. Multiplier & HD 1 & HD 2 & HD 3 & HD 4 & HD 5 \\
+2 - 5 & x3 & 22 & 45 & 89 & 180 & 360 \\
+6 - 10 & x4 & 45 & 89 & 180 & 360 & 720 \\
+11 - 20 & x5 & 90 & 180 & 360 & 720 & 1440 \\
+21 - 40 & x6 & 180 & 360 & 720 & 1440 & 2880 \\
+41 - 80 & x7 & 360 & 720 & 1440 & 2880 & 5760 \\
+\end{tabular}
 
 \section{Magic}
 
