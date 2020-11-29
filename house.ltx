@@ -392,7 +392,8 @@ with their fundamental descriptor regardless of the underlying ability being tes
 \bigskip\noindent Two handed melee weapons must be carried in hands (cannot be slotted in backpack)
 
 \medskip\noindent\key{Ranged weapons} have a given range (without a penalty), the maximum abstract
-range they can be used from, and the penalty for each step in abstract range. Rate of Fire (RoF) is the number of shots that can be fired in a round. If less than one, assume it is reloading time. A character who is reloading cannot reload while in melee.
+range they can be hit, and the penalty for each step in abstract range. Rate of Fire (RoF) is the number of shots
+that can be fired in a round. If less than one, assume it is reloading time. A character who is reloading cannot reload while in melee.
 
 \bigskip\noindent\begin{tabular}{lcccccccc}
   Weapon      & Range & Max Range & Penalty & RoF & Damage & Slots & City & Rural \\
@@ -429,7 +430,7 @@ or hire someone to carry it for them.
 \noindent When \textbf{exploring use the following table}, with each excess slot consumed applied:
 
 \begin{tabular}{llccc}
-  Excess Slots & Rating & Land & Explore & Climb \\
+  Burdened Slots & Rating & Land & Explore & Climb \\
   0 & Unencumbered & 24 & 120' & 8' \\
   1 & Light & 18 & 90' & 6' \\
   2 & Heavily & 12 & 60' & 3' \\
@@ -438,26 +439,27 @@ or hire someone to carry it for them.
   5 & Haha & 0 & 0' & 0' \\
 \end{tabular}
 \marginnote{When a \textbf{roll is required} to move, \textbf{roll against strength}. Failure means you
-  hesitate, stumble, catch your breath, etc. and you forfeit your movement for the round. Enemies can
-  still close with you and you can melee as normal in that round. Let the fiction guide you --moving close
-  by should be fine, but trying to cross a room, etc. when severely encumbered should require a roll in
+  hesitate, stumble, catch your breath, etc., and you forfeit your movement for the round.
+  \textbf{Success means that you can move up to 1 zone this round}. Let the fiction guide you --moving close by to duck behind a table
+  should be fine, but trying to cross a room or dash across a hallway when severely encumbered should require a roll in
   combat.}
 
-\noindent Encumbrance affects \textbf{how well you fight} and how much you can move in abstract combat. The
-\textbf{penalty applies to Attack, Defense, and Stealth}, and if you are too encumbered you will have
-a challenge moving around in combat.  Any agility related tasks outside of combat requiring a roll
-should also have the same penalty applied to it.
-
+\medskip\noindent Encumbrance affects \textbf{how well you fight} and how much you can move in abstract combat. The
+\textbf{penalty applies to Attack, Defense, and Stealth}. If you are too encumbered you will have a hard
+time moving around the battlefield during combat:
 
 \bigskip\noindent\begin{tabular}{llccc}
- Excess Slots & Rating & Penalty & Move & Run \\
+ Burdened Slots & Rating & Penalty & Move & Run \\
  0 & Unencumbered & 0 & 1 zone & 2 zones \\
  1 & Light & -1 & 1 zone & 2 zones \\
- 2 & Heavily & -2 & \nicefrac{1}{2} & 1 zone \\
- 3 & Severely & -3 & Roll & Nope \\
- 4 & Over &  -4 & Roll with Penalty & Nope \\
- 5 & Haha & Automatically Hit & Nope & Nope \\
+ 2 & Heavily & -2 & Roll with Penalty & 1 zone \\
+ 3 & Severely & -3 & Roll with Penalty & - \\
+ 4 & Over &  -4 & Roll with Penalty & - \\
+ 5 & Haha & Automatically Hit & - & - \\
 \end{tabular}
+
+\medskip\noindent Any agility related tasks outside of combat requiring a roll
+should also have the same penalty applied to it.
 
 \section{Classes}
 
@@ -501,9 +503,29 @@ to apply, use the generic Save derived attribute.
 
 \subsection{Kinds of Rolls}
 
-\subsection{Skills}
+\key{Advantage and Disadvantage} Rolling with advantage means rolling twice and taking the best result.
+Rolling with disadvantage means rolling twice and taking the worse result.
 
-\subsection{Advancement}
+\key{Doing Stuff} When a character wants to undertake a task that requireds a roll (e.g. a risky task) then
+they need to roll a D20.  If the result is equal to or under the task's attribute then the character is
+successful. If it is over then they are unsuccessful.  Rolling a 1  is a critical success, rolling a 20 is
+a critical failure. GM discretion of these should influence the result of a roll on a case by case basis.
+
+\key{Difficulty} A task may be easier or harder than normal and the GM should add or subtract modifiers as
+appropriate.  A character getting help from others (or interference from others) may also add or substract
+modifiers.  You cannot roll below 1 (it automatically fails) and you cannot roll above 20 --although a
+roll may still be used to see if a critical failure or critical success happens.
+
+\marginnote{Some tasks require a \textbf{trained roll} because it would be challenging for someone without
+  training to event attempt it.  Examples include trying to crack a safe, scaling a sheer surface, guessing the value
+  of a gemstone, tracking an animal, etc.  If a character has a relevant description written anywhere on the sheet,
+  then the player can roll a D20 like a regular task.  If it's written next to the right attribute, then roll with
+  advantage.  If they don't have it anywhere then roll with disadvantage or not allow the roll at all.}
+
+\key{Descriptions and Rolls} The characters description (from race, background, career, etc.) also play a role
+in rolling.  The descriptions give the character broad backgrounds to pull from when attempting skills.  When
+a description is written next to an attribute (e.g. Strength - Bodybuilder) then the character rolls with
+advantage as long at that description and the stat itself are relevant to the task at hand.
 
 \section{Encounters}
 
@@ -515,6 +537,9 @@ the mind combat driven by the player fiction.  Be generous with abstract movemen
 It should be obvious from the fiction what should apply.  Players can use their movement
 (subject to \hyperref[sec:encumbrance]{encumbrance rules}) to move between a single zone in combat.
 They can forgo melee by running two zones.  They can charge within a zone.
+
+There are five zones; however, not every combat needs to use all five. Typical combat will be (melee, room) and occasionally
+(range).  For larger encounters, battlefields, and the outdoors the full five ranges may come into play.
 
 \medskip\noindent\begin{tabular}{llc}
   Zone & Description & Approximate Distance (ft) \\
@@ -574,6 +599,8 @@ Number & Dam. Multiplier & HD 1 & HD 2 & HD 3 & HD 4 & HD 5 \\
 21 - 40 & x6 & 180 & 360 & 720 & 1440 & 2880 \\
 41 - 80 & x7 & 360 & 720 & 1440 & 2880 & 5760 \\
 \end{tabular}
+
+\subsection{Advancement}
 
 \section{Magic}
 
